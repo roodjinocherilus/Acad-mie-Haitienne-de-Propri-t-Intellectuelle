@@ -19,11 +19,9 @@ mais le chemin relatif du favicon ne se résout pas.
 
 ## Déployer
 
-N'importe quel hébergement statique convient. Déposer le dossier tel quel, aucune
-commande de construction, aucun répertoire de sortie.
-
-Après le déploiement, remplacer `REMPLACER.ht` dans les balises `canonical` et Open Graph
-par le domaine réel.
+Le site est servi par GitHub Pages depuis la branche `main`, dossier racine, sous le
+domaine `www.acahpi.com` déclaré dans le fichier `CNAME`. Un push sur `main` suffit à
+publier ; aucune commande de construction, aucun répertoire de sortie.
 
 ## Modifier
 
