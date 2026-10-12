@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Académie haïtienne de la propriété intellectuelle</title>
+<meta name="description" content="L’Académie haïtienne de la propriété intellectuelle forme les professionnels, les créateurs et les institutions à protéger et valoriser ce qui se crée en Haïti.">
+<link rel="canonical" href="https://REMPLACER.ht/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_HT">
+<meta property="og:title" content="Académie haïtienne de la propriété intellectuelle">
+<meta property="og:description" content="Créer est un acte. Protéger est un droit. Valoriser est une responsabilité.">
+<meta property="og:image" content="https://REMPLACER.ht/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+img,svg{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Schibsted+Grotesk:wght@400;500;600&display=swap">
+<style>
+/* Layout: full-bleed colour blocks stacked edge to edge. Oversized tight-set headlines,
+   wide calm body column, pills for anything enumerable, square edges everywhere else. */
+:root{
+  --navy:#06224F;
+  --navy-2:#0A2E68;
+  --navy-deep:#041735;
+  --red:#D81E2F;
+  --paper:#FFFFFF;
+  --paper-2:#F3F4F7;
+  --ink:#08152C;
+  --ink-2:#465267;
+  --line:#E2E4EA;
+  --on-navy:#FFFFFF;
+  --on-navy-2:#A9BEE2;
+  --seal:#C9D6EE;
+  --logo-ink:var(--ink);
+  --logo-accent:var(--red);
+  --disp:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;
+  --gut:clamp(20px,5vw,72px);
+  --maxw:1240px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --navy:#0A2457;
+    --navy-2:#0E2F6E;
+    --navy-deep:#05112A;
+    --red:#FF4D5E;
+    --paper:#070D1B;
+    --paper-2:#0D1528;
+    --ink:#EEF1F6;
+    --ink-2:#B0BBCF;
+    --line:#1C2740;
+    --on-navy:#FFFFFF;
+    --on-navy-2:#A9BEE2;
+    --seal:#C9D6EE;
+    --logo-ink:var(--ink);
+    --logo-accent:var(--red);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --navy:#0A2457;--navy-2:#0E2F6E;--navy-deep:#05112A;--red:#FF4D5E;
+  --paper:#070D1B;--paper-2:#0D1528;--ink:#EEF1F6;--ink-2:#B0BBCF;--line:#1C2740;
+  --on-navy:#FFFFFF;--on-navy-2:#A9BEE2;--seal:#C9D6EE;--logo-ink:var(--ink);--logo-accent:var(--red);
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
+  font-size:clamp(16.5px,1.12vw,18px);line-height:1.62;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;font-family:var(--disp);font-weight:700;letter-spacing:-.022em;
+  line-height:1.02;text-wrap:balance}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.shell{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gut)}
+.tag{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:7px 15px;
+  font-size:.78rem;font-weight:500;letter-spacing:.01em}
+.dot{width:6px;height:6px;border-radius:999px;background:var(--red);flex:none}
+
+/* ---------- header ---------- */
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);
+  border-bottom:1px solid var(--line)}
+.hdr .shell{display:flex;align-items:center;gap:18px;min-height:80px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand svg{height:48px;width:auto;flex:none}
+.brand b{font-family:var(--disp);font-weight:700;font-size:1.05rem;letter-spacing:-.01em;line-height:1.15}
+.nav{margin-left:auto;display:flex;align-items:center;gap:clamp(14px,2.4vw,32px)}
+.nav a:not(.cta){font-size:.9rem;font-weight:500;color:var(--ink-2)}
+.nav a:not(.cta):hover{color:var(--ink)}
+.cta{border-radius:999px;background:var(--red);color:#fff;padding:11px 22px;
+  font-weight:600;font-size:.9rem;transition:transform .15s ease,filter .15s ease}
+.cta:hover{filter:brightness(1.08);transform:translateY(-1px)}
+@media(max-width:760px){.brand b{display:none}.nav a:not(.cta){display:none}}
+
+/* ---------- hero ---------- */
+.hero{background:var(--navy);color:var(--on-navy)}
+.hero .shell{padding-block:clamp(56px,9vw,120px);display:grid;
+  grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(32px,5vw,80px);align-items:center}
+.hero .seal{justify-self:end;width:100%;max-width:440px;height:auto;
+  --logo-ink:var(--seal);--logo-accent:var(--seal)}
+@media(max-width:900px){.hero .shell{grid-template-columns:1fr}.hero .seal{display:none}}
+.hero .tag{background:rgba(255,255,255,.1);color:var(--on-navy)}
+.hero h1{font-size:clamp(2.35rem,6.6vw,5rem);font-weight:700;letter-spacing:-.026em;margin:0;max-width:16ch}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero .lede{margin-top:clamp(22px,3vw,30px);max-width:56ch;font-size:clamp(1rem,1.35vw,1.17rem);
+  color:var(--on-navy-2)}
+.hero .lede b{color:var(--on-navy);font-weight:500}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(28px,3.6vw,40px)}
+.btn{border-radius:999px;padding:14px 26px;font-weight:600;font-size:.95rem;
+  background:var(--red);color:#fff;transition:transform .15s ease,filter .15s ease}
+.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn.sec{background:transparent;color:var(--on-navy);box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
+.btn.sec:hover{background:rgba(255,255,255,.08);filter:none}
+
+/* ---------- metrics ---------- */
+.metrics{background:var(--navy-deep);color:var(--on-navy)}
+.metrics .shell{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,40px);
+  padding-block:clamp(30px,4vw,48px)}
+.metric .v{font-family:var(--disp);font-weight:700;font-size:clamp(1.9rem,4.4vw,3.2rem);
+  line-height:1;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.metric .k{margin-top:10px;font-size:.95rem;color:var(--on-navy-2)}
+@media(max-width:700px){.metrics .shell{gap:16px}.metric .k{font-size:.85rem}}
+
+/* ---------- blocks ---------- */
+.block{padding-block:clamp(60px,8.5vw,120px)}
+.head{display:grid;gap:18px;max-width:28ch}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:clamp(32px,6vw,96px);align-items:end}
+.intro .head{max-width:none}
+.intro .sub{margin-top:0}
+.intro .sub+.sub{margin-top:16px}
+@media(max-width:900px){.intro{grid-template-columns:1fr;gap:0}
+  .intro .head{max-width:28ch}.intro .sub:first-of-type{margin-top:clamp(20px,2.6vw,28px)}}
+.kick{font-size:.86rem;font-weight:600;color:var(--red);letter-spacing:.01em}
+h2{font-size:clamp(1.85rem,4.4vw,3.2rem)}
+.sub{margin-top:clamp(20px,2.6vw,28px);max-width:58ch;color:var(--ink-2);
+  font-size:clamp(1.03rem,1.3vw,1.16rem)}
+.sub b{color:var(--ink);font-weight:600}
+
+/* risk grid */
+.risks{display:grid;grid-template-columns:repeat(auto-fit,minmax(252px,1fr));
+  gap:clamp(18px,2.4vw,28px);margin-top:clamp(34px,4.4vw,56px)}
+.risk{background:var(--paper-2);padding:clamp(22px,2.6vw,30px);display:grid;gap:10px;align-content:start}
+.risk .n{font-family:var(--disp);font-weight:700;font-size:1.1rem;color:var(--red);letter-spacing:-.02em}
+.risk h3{font-size:1.14rem;letter-spacing:-.015em}
+.risk p{color:var(--ink-2);font-size:1rem}
+
+/* programme */
+.prog{background:var(--paper-2)}
+.mods{margin-top:clamp(34px,4.4vw,52px);display:grid;gap:2px;background:var(--line)}
+.mod{background:var(--paper);display:grid;grid-template-columns:auto minmax(0,1fr) auto;
+  gap:clamp(16px,3vw,40px);padding:clamp(22px,3vw,34px) clamp(20px,2.6vw,34px);
+  align-items:center;transition:background .18s ease}
+.mod:hover{background:var(--navy);color:var(--on-navy)}
+.mod:hover h3{color:var(--on-navy)}
+.mod:hover p,.mod:hover .dur{color:var(--on-navy-2)}
+.mod .num{font-family:var(--disp);font-weight:700;font-size:clamp(1.3rem,2.6vw,2rem);
+  color:var(--red);letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.mod h3{font-size:clamp(1.18rem,2.2vw,1.65rem);margin-bottom:7px}
+.mod p{color:var(--ink-2);font-size:1rem;max-width:58ch}
+.mod .dur{font-size:.9rem;color:var(--ink-2);white-space:nowrap}
+@media(max-width:640px){.mod{grid-template-columns:auto minmax(0,1fr)}
+  .mod .dur{grid-column:2}}
+.fine{margin-top:18px;font-size:.9rem;color:var(--ink-2)}
+
+/* audience pills */
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin:clamp(30px,4vw,44px) 0 0;padding:0}
+.pills li{list-style:none}
+.pills .tag{background:var(--paper-2);color:var(--ink);font-size:.92rem;padding:10px 18px}
+
+/* équipe */
+.team{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));
+  gap:clamp(20px,2.6vw,32px);margin-top:clamp(34px,4.4vw,52px)}
+.person{display:grid;gap:14px;align-content:start;grid-column:span 2}
+.person.lead{grid-column:span 3}
+.person .por{aspect-ratio:1/1}
+.person.lead .por{aspect-ratio:4/3}
+@media(max-width:640px){.team{grid-template-columns:1fr}.person,.person.lead{grid-column:auto}
+  .person .por,.person.lead .por{aspect-ratio:4/3}}
+.por{aspect-ratio:4/5;background:var(--navy);display:grid;place-items:center;overflow:hidden;position:relative}
+.por img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;display:block}
+.por .ini{font-family:var(--disp);font-weight:700;font-size:clamp(1.9rem,4vw,2.9rem);
+  letter-spacing:-.04em;color:rgba(255,255,255,.92)}
+.por::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--red)}
+.person h3{font-size:1.14rem;letter-spacing:-.015em}
+.person .role{display:block;margin-top:5px;font-size:.9rem;font-weight:600;color:var(--red)}
+.person .bio{margin-top:9px;font-size:1rem;color:var(--ink-2)}
+.team-note{margin-top:clamp(26px,3vw,36px);font-size:.94rem;color:var(--ink-2);max-width:62ch}
+
+/* travaux */
+.work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:2px;margin-top:clamp(34px,4.4vw,52px);background:rgba(255,255,255,.14)}
+.work{background:var(--navy);padding:clamp(24px,2.8vw,34px);display:grid;gap:10px;align-content:start}
+.work h3{font-size:1.18rem;color:var(--on-navy);letter-spacing:-.015em}
+.work p{color:var(--on-navy-2);font-size:1rem}
+@media(max-width:900px){.work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.work-grid{grid-template-columns:1fr}}
+
+/* candidature */
+.apply{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);
+  gap:clamp(34px,5vw,80px);align-items:start}
+@media(max-width:900px){.apply{grid-template-columns:1fr}}
+form{background:var(--paper-2);padding:clamp(24px,3vw,36px);display:grid;gap:18px}
+.f{display:grid;gap:7px;min-width:0}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:520px){.f2{grid-template-columns:1fr}}
+label{font-size:.9rem;font-weight:500;color:var(--ink-2)}
+input,select,textarea{font-family:var(--body);font-size:1rem;color:var(--ink);background:var(--paper);
+  border:1px solid var(--line);border-radius:10px;padding:12px 14px;width:100%;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--red)}
+textarea{resize:vertical;min-height:92px}
+select{appearance:none;cursor:pointer}
+button{font-family:var(--body);font-weight:600;font-size:.95rem;border:0;border-radius:999px;
+  padding:14px 26px;background:var(--red);color:#fff;cursor:pointer;justify-self:start}
+button:hover{filter:brightness(1.08)}
+.note{font-size:.9rem;color:var(--ink-2)}
+.done{background:var(--navy);color:var(--on-navy);padding:clamp(24px,3vw,36px);display:grid;gap:12px}
+.done h3{font-size:1.4rem;color:var(--on-navy)}
+.done p{color:var(--on-navy-2)}
+
+/* footer */
+footer{background:var(--navy-deep);color:var(--on-navy)}
+.foot{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(34px,5vw,70px);
+  padding-block:clamp(46px,6vw,78px);align-items:start}
+@media(max-width:800px){.foot{grid-template-columns:1fr}}
+footer .lg svg{height:112px;width:auto;max-width:100%;--logo-ink:var(--on-navy);--logo-accent:var(--on-navy)}
+.motto{font-family:var(--disp);font-weight:500;font-size:clamp(1.1rem,2.1vw,1.5rem);
+  letter-spacing:-.02em;margin-top:24px}
+.motto em{font-style:normal;color:var(--red)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:28px}
+.col h4{margin:0 0 11px;font-size:.8rem;font-weight:600;color:var(--on-navy-2)}
+.col p,.col a{display:block;font-size:.96rem;margin-bottom:6px;color:var(--on-navy)}
+.col a:hover{color:var(--red)}
+.base{border-top:1px solid rgba(255,255,255,.14);padding-block:20px;display:flex;gap:20px;
+  flex-wrap:wrap;font-size:.84rem;color:var(--on-navy-2)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+</head>
+<body>
+<header class="hdr">
+  <div class="shell">
+    <a class="brand" href="#top"><svg viewBox="339 266 591 410" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path transform="matrix(1,0,0,-1,923.7361,472.85798)" d="M0 0C1.025-71.326-25.171-144.476-72.923-197.063-56.342-170.1-41.97-142.888-31.021-113.18-8.727-52.686-5.201 12.131-21.483 74.676-32.205 115.867-50.519 153.666-73.091 189.902-25.738 138.831-.994 69.143 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,418.4905,670.04397)" d="M0 0C-44.786 47.305-69.474 114.083-72.44 178.968-74.939 233.628-63.082 286.857-37.535 334.637-26.199 353.32-15.796 371.948 .355 387.168-22.025 352.104-39.584 315.751-50.346 275.827-66.612 215.49-64.691 152.658-45.525 93.203-34.77 59.839-18.998 29.339 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,479.0682,501.29029)" d="M0 0C0 18.145-14.593 32.854-32.594 32.854-50.596 32.854-65.189 18.145-65.189 0-65.189-18.145-50.596-32.854-32.594-32.854-14.593-32.854 0-18.145 0 0M3.514-.023C3.514-20.12-12.649-36.412-32.587-36.412-52.526-36.412-68.689-20.12-68.689-.023-68.689 20.073-52.526 36.365-32.587 36.365-12.649 36.365 3.514 20.073 3.514-.023" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,463.1158,513.18618)" d="M0 0-.324 16.532-5.577 1.135C-5.769 .575-8.171-.584-8.508-.078-8.963 .605-9.828 2.071-10.103 2.89L-14.761 16.751-14.972 .1-19.292-.105-19.407 22.9-12.656 22.854-7.344 8.444-2.365 22.809 4.332 23.07 4.376 .049Z" fill="var(--logo-accent)"/><path transform="matrix(1,0,0,-1,434.0875,513.06069)" d="M0 0-4.837-.076-4.838 18.993-8.931 19.045C-9.668 19.054-11.29 20.047-11.535 20.751-11.84 21.632-9.921 23.083-8.988 23.068L6.653 22.815C6.464 20.769 6.287 19.202 5.631 19.21L.188 19.273Z" fill="var(--logo-accent)"/><path transform="matrix(1,0,0,-1,855.9799,501.2793)" d="M0 0C0 18.194-14.632 32.942-32.682 32.942-50.732 32.942-65.365 18.194-65.365 0-65.365-18.194-50.732-32.942-32.682-32.942-14.632-32.942 0-18.194 0 0M3.456-.019C3.456-20.154-12.738-36.476-32.714-36.476-52.69-36.476-68.883-20.154-68.883-.019-68.883 20.116-52.69 36.438-32.714 36.438-12.738 36.438 3.456 20.116 3.456-.019" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,816.228,511.34663)" d="M0 0C2.675-4.123 6.892-6.431 11.096-5.482 15.311-4.53 17.221-1.546 21.537 3.213L20.321-5.284C12.906-8.651 3.772-10.144-3.105-4.709-12.318 2.573-11.637 17.776-2.503 24.791 4.318 30.03 12.703 28.835 20.477 25.624 21.276 22.817 21.19 18.818 19.991 15.627 17.204 20.591 15.639 24.595 12.308 25.393 6.828 26.706 2.313 25.118-.2 20.501-3.487 14.465-3.971 6.122 0 0" fill="var(--logo-accent)"/><path transform="matrix(1,0,0,-1,667.6491,309.29463)" d="M0 0C0 18.584-14.946 33.649-33.383 33.649-51.821 33.649-66.767 18.584-66.767 0-66.767-18.584-51.821-33.649-33.383-33.649-14.946-33.649 0-18.584 0 0M3.527-.014C3.527-20.568-13.003-37.229-33.394-37.229-53.785-37.229-70.315-20.568-70.315-.014-70.315 20.539-53.785 37.201-33.394 37.201-13.003 37.201 3.527 20.539 3.527-.014" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,629.0521,308.0957)" d="M0 0C6.302-.276 8.783 .483 10.507 3.76 11.818 6.25 11.428 10.728 9.732 12.763 7.588 15.336 3.374 15.808 .065 14.665ZM5.493-3.695C4.803-2.381 1.031-1.79-.011-3.033L-.194-15.507 4.468-18.788-10.985-18.842-6.393-15.514-6.325 14.748C-8.224 15.629-9.087 16.061-10.627 17.287L7.672 17.568C13.116 17.651 17.138 14.501 17.925 9.64 18.784 4.331 15.54-.025 10.553-.967L15.684-9.848C17.841-13.581 19.978-15.861 23.644-18.859L13.509-18.962Z" fill="var(--logo-accent)"/><path transform="matrix(1,0,0,-1,573.6074,508.06983)" d="M0 0-21.919 64.672-22.212-.25ZM-24.716-.025-25.064 64.697-47.143-.203ZM167.086-.035 144.966 65.547 144.65-.339ZM142.266 .052 141.827 65.494 119.704-.305ZM62.817 68.905 61.889 65.615C61.664 64.817 59.098 63.906 58.721 64.643L57.017 67.975C53.311 69.453 50.518 72.71 49.299 76.469 37.349 81.925 23.462 79.595 11.374 74.085 3.239 70.377-5.932 67.79-14.446 71.032-16.117 71.668-20.729 69.971-20.101 68.149L3.221 .512 10.202-.441C3.533-13.105-8.708-21.368-22.78-21.461-37.089-21.556-49.864-14.694-56.711-.602L-50.454-.224-26.991 68.695C-30.966 71.242-32.614 75.117-31.53 78.909-30.423 82.787-26.873 85.183-22.884 84.951-18.666 84.706-16.057 80.516-15.079 76.623-5.512 75.671 3.396 80.401 11.537 84.803 23.514 91.278 35.982 94.371 49.405 89.899 49.772 99.339 60.658 100.23 58.599 102.68 55.671 106.164 51.382 107.414 50.743 112.582 49.653 121.405 58.874 122.39 59.742 132.318 61.842 127.448 63.976 123.629 67.213 120.292 71.897 115.463 68.853 107.058 63.601 104.911 62.702 104.544 61.308 102.269 61.72 101.546 63.568 98.304 70.343 99.141 69.317 89.678 82.792 94.114 96.273 91.823 108.742 84.902 117.1 80.263 126.178 75.811 135.768 76.6 136.327 80.825 138.739 84.631 143.045 84.957 146.846 85.245 150.531 82.945 151.785 78.964 153.065 74.901 150.64 71.104 146.985 68.265L169.937 .675 176.817-.625C169.879-16.549 151.657-24.673 134.157-20.285 123.4-17.588 114.786-9.914 109.294-.231L116.676 .016 121.814 15.927 139.639 68.123C139.323 69.033 138.889 70.235 138.47 70.685 136.845 72.43 127.646 65.736 109.543 73.991 96.786 79.809 82.856 81.768 69.577 76.368 69.411 72.7 66.955 69.41 62.817 68.905" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,646.5033,563.61587)" d="M0 0-25.859-.276C-27.463 5.003-25.972 11.097-19.868 13.485L-19.893 112.213-24.786 117.514-1.119 117.54-6.223 111.449-6.351 13.708C-1.201 10.877 1.141 7.752 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,668.8632,584.7574)" d="M0 0-70.545-.015C-71.144 3.151-70.763 8.012-67.549 9.609-65.341 10.706-60.011 10.314-57.899 10.226L-56.006 17.967-14.401 17.897-12.028 10.547C-9.75 10.416-5.067 10.518-2.759 9.464 .163 8.13 .44 3.31 0 0" fill="var(--logo-ink)"/></svg><b>AHPI</b></a>
+    <nav class="nav">
+      <a href="#constat">Le constat</a>
+      <a href="#programme">Programme</a>
+      <a href="#equipe">L’équipe</a>
+      <a href="#travaux">Nos travaux</a>
+      <a href="#candidature" class="cta">Candidater</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="shell">
+      <div>
+      <h1>Créer est un acte. Protéger est un droit. <em>Valoriser</em> est une responsabilité.</h1>
+      <p class="lede">Haïti crée, écrit, compose, invente et développe des marques. <b>Trop peu de créateurs, d’entreprises et d’institutions disposent des connaissances nécessaires pour protéger ces actifs et en tirer une valeur durable.</b> L’Académie haïtienne de la propriété intellectuelle est née de ce constat.</p>
+      <div class="btns">
+        <a class="btn" href="#candidature">Déposer une candidature</a>
+        <a class="btn sec" href="#programme">Voir le programme</a>
+      </div>
+      </div>
+      <svg class="seal" viewBox="339 266 591 410" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path transform="matrix(1,0,0,-1,923.7361,472.85798)" d="M0 0C1.025-71.326-25.171-144.476-72.923-197.063-56.342-170.1-41.97-142.888-31.021-113.18-8.727-52.686-5.201 12.131-21.483 74.676-32.205 115.867-50.519 153.666-73.091 189.902-25.738 138.831-.994 69.143 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,418.4905,670.04397)" d="M0 0C-44.786 47.305-69.474 114.083-72.44 178.968-74.939 233.628-63.082 286.857-37.535 334.637-26.199 353.32-15.796 371.948 .355 387.168-22.025 352.104-39.584 315.751-50.346 275.827-66.612 215.49-64.691 152.658-45.525 93.203-34.77 59.839-18.998 29.339 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,479.0682,501.29029)" d="M0 0C0 18.145-14.593 32.854-32.594 32.854-50.596 32.854-65.189 18.145-65.189 0-65.189-18.145-50.596-32.854-32.594-32.854-14.593-32.854 0-18.145 0 0M3.514-.023C3.514-20.12-12.649-36.412-32.587-36.412-52.526-36.412-68.689-20.12-68.689-.023-68.689 20.073-52.526 36.365-32.587 36.365-12.649 36.365 3.514 20.073 3.514-.023" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,463.1158,513.18618)" d="M0 0-.324 16.532-5.577 1.135C-5.769 .575-8.171-.584-8.508-.078-8.963 .605-9.828 2.071-10.103 2.89L-14.761 16.751-14.972 .1-19.292-.105-19.407 22.9-12.656 22.854-7.344 8.444-2.365 22.809 4.332 23.07 4.376 .049Z" fill="var(--logo-accent)"/><path transform="matrix(1,0,0,-1,434.0875,513.06069)" d="M0 0-4.837-.076-4.838 18.993-8.931 19.045C-9.668 19.054-11.29 20.047-11.535 20.751-11.84 21.632-9.921 23.083-8.988 23.068L6.653 22.815C6.464 20.769 6.287 19.202 5.631 19.21L.188 19.273Z" fill="var(--logo-accent)"/><path transform="matrix(1,0,0,-1,855.9799,501.2793)" d="M0 0C0 18.194-14.632 32.942-32.682 32.942-50.732 32.942-65.365 18.194-65.365 0-65.365-18.194-50.732-32.942-32.682-32.942-14.632-32.942 0-18.194 0 0M3.456-.019C3.456-20.154-12.738-36.476-32.714-36.476-52.69-36.476-68.883-20.154-68.883-.019-68.883 20.116-52.69 36.438-32.714 36.438-12.738 36.438 3.456 20.116 3.456-.019" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,816.228,511.34663)" d="M0 0C2.675-4.123 6.892-6.431 11.096-5.482 15.311-4.53 17.221-1.546 21.537 3.213L20.321-5.284C12.906-8.651 3.772-10.144-3.105-4.709-12.318 2.573-11.637 17.776-2.503 24.791 4.318 30.03 12.703 28.835 20.477 25.624 21.276 22.817 21.19 18.818 19.991 15.627 17.204 20.591 15.639 24.595 12.308 25.393 6.828 26.706 2.313 25.118-.2 20.501-3.487 14.465-3.971 6.122 0 0" fill="var(--logo-accent)"/><path transform="matrix(1,0,0,-1,667.6491,309.29463)" d="M0 0C0 18.584-14.946 33.649-33.383 33.649-51.821 33.649-66.767 18.584-66.767 0-66.767-18.584-51.821-33.649-33.383-33.649-14.946-33.649 0-18.584 0 0M3.527-.014C3.527-20.568-13.003-37.229-33.394-37.229-53.785-37.229-70.315-20.568-70.315-.014-70.315 20.539-53.785 37.201-33.394 37.201-13.003 37.201 3.527 20.539 3.527-.014" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,629.0521,308.0957)" d="M0 0C6.302-.276 8.783 .483 10.507 3.76 11.818 6.25 11.428 10.728 9.732 12.763 7.588 15.336 3.374 15.808 .065 14.665ZM5.493-3.695C4.803-2.381 1.031-1.79-.011-3.033L-.194-15.507 4.468-18.788-10.985-18.842-6.393-15.514-6.325 14.748C-8.224 15.629-9.087 16.061-10.627 17.287L7.672 17.568C13.116 17.651 17.138 14.501 17.925 9.64 18.784 4.331 15.54-.025 10.553-.967L15.684-9.848C17.841-13.581 19.978-15.861 23.644-18.859L13.509-18.962Z" fill="var(--logo-accent)"/><path transform="matrix(1,0,0,-1,573.6074,508.06983)" d="M0 0-21.919 64.672-22.212-.25ZM-24.716-.025-25.064 64.697-47.143-.203ZM167.086-.035 144.966 65.547 144.65-.339ZM142.266 .052 141.827 65.494 119.704-.305ZM62.817 68.905 61.889 65.615C61.664 64.817 59.098 63.906 58.721 64.643L57.017 67.975C53.311 69.453 50.518 72.71 49.299 76.469 37.349 81.925 23.462 79.595 11.374 74.085 3.239 70.377-5.932 67.79-14.446 71.032-16.117 71.668-20.729 69.971-20.101 68.149L3.221 .512 10.202-.441C3.533-13.105-8.708-21.368-22.78-21.461-37.089-21.556-49.864-14.694-56.711-.602L-50.454-.224-26.991 68.695C-30.966 71.242-32.614 75.117-31.53 78.909-30.423 82.787-26.873 85.183-22.884 84.951-18.666 84.706-16.057 80.516-15.079 76.623-5.512 75.671 3.396 80.401 11.537 84.803 23.514 91.278 35.982 94.371 49.405 89.899 49.772 99.339 60.658 100.23 58.599 102.68 55.671 106.164 51.382 107.414 50.743 112.582 49.653 121.405 58.874 122.39 59.742 132.318 61.842 127.448 63.976 123.629 67.213 120.292 71.897 115.463 68.853 107.058 63.601 104.911 62.702 104.544 61.308 102.269 61.72 101.546 63.568 98.304 70.343 99.141 69.317 89.678 82.792 94.114 96.273 91.823 108.742 84.902 117.1 80.263 126.178 75.811 135.768 76.6 136.327 80.825 138.739 84.631 143.045 84.957 146.846 85.245 150.531 82.945 151.785 78.964 153.065 74.901 150.64 71.104 146.985 68.265L169.937 .675 176.817-.625C169.879-16.549 151.657-24.673 134.157-20.285 123.4-17.588 114.786-9.914 109.294-.231L116.676 .016 121.814 15.927 139.639 68.123C139.323 69.033 138.889 70.235 138.47 70.685 136.845 72.43 127.646 65.736 109.543 73.991 96.786 79.809 82.856 81.768 69.577 76.368 69.411 72.7 66.955 69.41 62.817 68.905" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,646.5033,563.61587)" d="M0 0-25.859-.276C-27.463 5.003-25.972 11.097-19.868 13.485L-19.893 112.213-24.786 117.514-1.119 117.54-6.223 111.449-6.351 13.708C-1.201 10.877 1.141 7.752 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,668.8632,584.7574)" d="M0 0-70.545-.015C-71.144 3.151-70.763 8.012-67.549 9.609-65.341 10.706-60.011 10.314-57.899 10.226L-56.006 17.967-14.401 17.897-12.028 10.547C-9.75 10.416-5.067 10.518-2.759 9.464 .163 8.13 .44 3.31 0 0" fill="var(--logo-ink)"/></svg>
+    </div>
+  </section>
+
+  <section class="metrics">
+    <div class="shell">
+      <div class="metric"><div class="v">4</div><div class="k">Masterclass de deux jours</div></div>
+      <div class="metric"><div class="v">8</div><div class="k">Journées de formation</div></div>
+      <div class="metric"><div class="v">25–30</div><div class="k">Places par promotion</div></div>
+    </div>
+  </section>
+
+  <section id="constat" class="block">
+    <div class="shell">
+      <div class="intro">
+        <div class="head">
+          <span class="kick">Le constat</span>
+          <h2>Ce qui se perd faute de savoir</h2>
+        </div>
+        <p class="sub">La propriété intellectuelle relie le droit à la culture, à l’innovation, au commerce, au numérique et à l’agriculture. <b>Mal maîtrisée, elle fait sortir du pays la valeur qu’il produit.</b> Quatre situations, rencontrées tous les jours en Haïti.</p>
+      </div>
+      <div class="risks">
+        <div class="risk"><span class="n">01</span><h3>Une œuvre mal protégée</h3><p>Exploitée sans autorisation, elle échappe à celui qui l’a créée.</p></div>
+        <div class="risk"><span class="n">02</span><h3>Une marque non sécurisée</h3><p>Un dépôt tardif ou mal construit laisse le nom à la portée d’un tiers.</p></div>
+        <div class="risk"><span class="n">03</span><h3>Une invention divulguée trop tôt</h3><p>Rendue publique avant protection, elle perd sa nouveauté.</p></div>
+        <div class="risk"><span class="n">04</span><h3>Un contrat mal négocié</h3><p>La valeur créée part ailleurs, souvent de façon irréversible.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programme" class="block prog">
+    <div class="shell">
+      <div class="intro">
+        <div class="head">
+          <span class="kick">Programme</span>
+          <h2>Quatre Masterclass, d’octobre 2026 à juin 2027</h2>
+        </div>
+        <p class="sub">Chaque session associe notions essentielles, études de cas et ateliers pratiques. <b>L’effectif est limité à 25 ou 30 participants</b> pour préserver la qualité des échanges. Un certificat est délivré par module, une certification globale sanctionne le cycle complet.</p>
+      </div>
+      <div class="mods">
+        <article class="mod"><div class="num">01</div>
+          <div><h3>Droit d’auteur et droits voisins</h3><p>Reconnaître les droits en jeu sur une œuvre, documenter une création, maîtriser les autorisations d’exploitation et les cessions.</p></div>
+          <div class="dur">2 jours</div></article>
+        <article class="mod"><div class="num">02</div>
+          <div><h3>Marques, dessins et modèles</h3><p>Construire et sécuriser un signe distinctif, mener les démarches de protection, surveiller et défendre une marque.</p></div>
+          <div class="dur">2 jours</div></article>
+        <article class="mod"><div class="num">03</div>
+          <div><h3>Brevets et innovation technique</h3><p>Apprécier la nouveauté d’une invention, rechercher l’art antérieur, protéger avant toute divulgation, envisager la licence.</p></div>
+          <div class="dur">2 jours</div></article>
+        <article class="mod"><div class="num">04</div>
+          <div><h3>Contrats, licences et valorisation</h3><p>Négocier l’exploitation, accorder une licence, défendre ses intérêts et vivre du travail produit.</p></div>
+          <div class="dur">2 jours</div></article>
+      </div>
+      <p class="fine">Programme indicatif. Les dates de chaque session sont communiquées aux candidats retenus.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="shell">
+      <div class="intro">
+        <div class="head">
+          <span class="kick">Admissibilité</span>
+          <h2>Ceux qui créent, ceux qui conseillent, ceux qui décident</h2>
+        </div>
+        <p class="sub">Les Masterclass réunissent des profils volontairement hétérogènes. <b>Cette diversité est le dispositif pédagogique lui-même :</b> un magistrat et un éditeur ne posent pas les mêmes questions sur le même contrat.</p>
+      </div>
+      <ul class="pills">
+        <li><span class="tag">Avocats</span></li><li><span class="tag">Magistrats</span></li>
+        <li><span class="tag">Étudiants en droit</span></li><li><span class="tag">Journalistes</span></li>
+        <li><span class="tag">Écrivains</span></li><li><span class="tag">Artistes</span></li>
+        <li><span class="tag">Éditeurs</span></li><li><span class="tag">Entrepreneurs</span></li>
+        <li><span class="tag">Chercheurs</span></li><li><span class="tag">Cadres d’institutions</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="equipe" class="block prog">
+    <div class="shell">
+      <div class="intro">
+        <div class="head">
+          <span class="kick">L’équipe</span>
+          <h2>Celles et ceux qui portent l’Académie</h2>
+        </div>
+        <p class="sub">L’Académie est portée par des praticiens du droit, de la création et de l’institution. <b>Ce sont eux qui enseignent, qui arbitrent le programme et qui engagent l’Académie</b> devant ses partenaires.</p>
+      </div>
+      <div class="team">
+        <article class="person lead">
+          <div class="por"><img src="assets/team/emmelie-prophete-milce.jpg" alt="Emmelie Prophète Milcé" loading="lazy" decoding="async"></div>
+          <div><h3>Emmelie Prophète Milcé</h3><span class="role">Codirection</span>
+            <p class="bio">À l’origine du projet. Écrivaine et femme d’institution, elle porte la vision de l’Académie et son ancrage dans la vie culturelle haïtienne.</p></div>
+        </article>
+        <article class="person lead">
+          <div class="por"><img src="assets/team/johanny-stanley-joseph.jpg" alt="Johanny Stanley Joseph" loading="lazy" decoding="async"></div>
+          <div><h3>Johanny Stanley Joseph</h3><span class="role">Codirection</span>
+            <p class="bio">Responsable de la structuration de l’Académie et de son inscription dans la durée.</p></div>
+        </article>
+        <article class="person">
+          <div class="por"><img src="assets/team/patrick-laurent.jpg" alt="Patrick Laurent" loading="lazy" decoding="async"></div>
+          <div><h3>Patrick Laurent</h3><span class="role">Fonction à confirmer</span>
+            <p class="bio">Bio à compléter.</p></div>
+        </article>
+        <article class="person">
+          <div class="por"><img src="assets/team/anita-dolma.jpg" alt="Anita Dolma" loading="lazy" decoding="async"></div>
+          <div><h3>Anita Dolma</h3><span class="role">Fonction à confirmer</span>
+            <p class="bio">Bio à compléter.</p></div>
+        </article>
+        <article class="person">
+          <div class="por"><img src="assets/team/georges-andy-rene.jpg" alt="Georges Andy René" loading="lazy" decoding="async"></div>
+          <div><h3>Georges Andy René</h3><span class="role">Fonction à confirmer</span>
+            <p class="bio">Bio à compléter.</p></div>
+        </article>
+      </div>
+      <p class="team-note">Les intervenants de chaque Masterclass sont annoncés avec le calendrier des sessions.</p>
+    </div>
+  </section>
+
+  <section id="travaux" class="block" style="background:var(--navy);color:var(--on-navy)">
+    <div class="shell">
+      <div class="intro">
+        <div class="head">
+          <span class="kick">Nos travaux</span>
+          <h2 style="color:var(--on-navy)">Au-delà de la formation</h2>
+        </div>
+        <p class="sub" style="color:var(--on-navy-2)">L’Académie inscrit son travail dans la durée, par la recherche, le dialogue avec les institutions et l’animation d’une communauté de praticiens.</p>
+      </div>
+      <div class="work-grid">
+        <div class="work"><h3>Jeunesse et innovation</h3><p>Ateliers et présentations de projets avec les écoles et les universités, pour sensibiliser les jeunes à la valeur de leurs réalisations.</p></div>
+        <div class="work"><h3>Décision publique</h3><p>Études, échanges et propositions pour éclairer les choix des institutions compétentes, dans le respect des prérogatives de chacune.</p></div>
+        <div class="work"><h3>Club des praticiens</h3><p>Un espace suivi où les participants partagent leurs expériences et soumettent les questions rencontrées dans leur pratique.</p></div>
+        <div class="work"><h3>Doctrine haïtienne</h3><p>Des travaux et des analyses pour comprendre le droit, discuter ses évolutions et éclairer son application dans le pays.</p></div>
+        <div class="work"><h3>Numérique et intelligence artificielle</h3><p>Les enjeux liés aux plateformes, à l’IA et aux industries créatives, rendus accessibles par des guides et des publications.</p></div>
+        <div class="work"><h3>Savoir-faire et expressions culturelles</h3><p>La place des savoir-faire et des expressions culturelles haïtiennes dans la réflexion et dans la protection.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="candidature" class="block">
+    <div class="shell apply">
+      <div>
+        <div class="head">
+          <span class="kick">Candidature</span>
+          <h2>Rejoindre l’Académie</h2>
+        </div>
+        <p class="sub">Les places étant limitées, les candidatures sont examinées au fil de leur réception. <b>La composition du groupe est arbitrée pour préserver l’équilibre des profils.</b></p>
+        <p class="sub">L’Académie revient vers chaque candidat avec le calendrier des sessions et les conditions de participation.</p>
+      </div>
+      <form id="cand" novalidate>
+        <div class="f2">
+          <div class="f"><label for="prenom">Prénom</label><input id="prenom" type="text" autocomplete="given-name"></div>
+          <div class="f"><label for="nom">Nom</label><input id="nom" type="text" autocomplete="family-name"></div>
+        </div>
+        <div class="f"><label for="email">Adresse électronique</label><input id="email" type="email" autocomplete="email"></div>
+        <div class="f"><label for="tel">Téléphone</label><input id="tel" type="tel" autocomplete="tel"></div>
+        <div class="f"><label for="profil">Profil</label>
+          <select id="profil">
+            <option>Avocat ou magistrat</option><option>Étudiant en droit</option>
+            <option>Artiste, écrivain, éditeur</option><option>Entrepreneur</option>
+            <option>Journaliste</option><option>Chercheur ou universitaire</option>
+            <option>Cadre d’institution</option><option>Autre</option>
+          </select>
+        </div>
+        <div class="f"><label for="org">Organisation</label><input id="org" type="text" autocomplete="organization"></div>
+        <div class="f"><label for="motiv">Ce que vous attendez du cycle</label><textarea id="motiv"></textarea></div>
+        <button type="submit">Envoyer ma candidature</button>
+        <p class="note" id="note">Les informations transmises servent uniquement à l’examen des candidatures.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="shell">
+    <div class="foot">
+      <div class="lg">
+        <svg viewBox="181 165 931 617" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path transform="matrix(1,0,0,-1,533.3075,223.40387)" d="M0 0-2.164 31.398-16.848-3.821-32.166 31.868-34.311-.175-29.053-2.54-41.544-2.634C-39.631-1.378-37.172 .096-37.066 1.539L-34.566 35.554-39.185 38.862-28.124 38.957-15.7 7.431-2.39 39.254 8.491 38.796 3.637 36.029 6.23-.514 10.518-2.742-4.907-2.612Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,710.1163,226.1236)" d="M0 0-14.839 .079-11.022 2.441-10.874 20.539-31.737 20.342-31.819 2.507-27.66 .139-42.76-.013-38.034 2.536-37.924 38.804-42.814 41.587-27.402 41.748-31.615 38.383-31.816 23.042-10.907 23.037-11.055 38.699-14.936 41.633-.365 41.702-4.289 38.658-4.348 3.023Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,412.4677,220.79383)" d="M0 0C8.646 7.741 8.921 22.372 1.157 30.215-3.601 35.022-10.106 34.452-17.179 33.842L-17.238-2.384C-12.016-3.447-4.917-4.402 0 0M-5.09-4.898-27.926-5.32-23.239-2.104-23.266 33.412-28.094 36.297C-8.593 36.902 11.669 38.933 13.32 18.412 14.225 7.154 7.346-4.669-5.09-4.898" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,1046.5935,225.97303)" d="M0 0-2.841-.496-30.594 34.852-30.688 2.358-25.18 .062-37.946-.082C-35.869 1.272-33.601 2.624-33.603 3.97L-33.651 38.534-38.611 41.328-27.898 41.762-2.992 10.532-2.644 38.586-8.549 41.437 5.061 41.368-.11 38.309Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,985.6692,228.10102)" d="M0 0-30.007 36.912-30.01 7.263C-30.01 6.337-29.523 4.597-28.995 4.292L-25.21 2.11-37.896 2.102-34.262 4.254C-33.448 4.736-32.861 6.84-32.868 8.213L-33.049 39.757-37.988 43.386-27.326 43.993-2.379 12.425-2.22 40.677-7.516 43.512 5.262 43.628 .681 40.409Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,1089.4043,206.00409)" d="M0 0-10.375 .482-10.317-17.344C-5.922-18.005-.789-18.687 3.793-16.876 6.022-15.994 7.294-11.749 10.225-9.152L9.389-20.052-20.926-20.087-16.396-17.542-16.377 18.697-21.192 21.57 7.161 21.937 7.236 12.241C5.184 14.371 3.741 17.926 2.204 18.597-.917 19.654-6.802 19.312-10.235 19.212L-10.243 2.895-.569 2.934 3.548 8.503 3.412-5.483Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,614.5916,205.73059)" d="M0 0-10.289 .173-10.479-17.661C-6.127-18.257-1.026-18.814 3.597-17.157 5.822-16.36 7.534-12.26 9.908-9.575L9.079-20.322-21.06-20.313-16.567-17.817-16.556 18.412-21.179 21.269 7.354 21.534 7.09 11.909C5.413 14.225 3.892 18.339 1.957 18.424L-10.281 18.959-10.524 2.36-.386 2.836 3.425 8.302 3.172-5.716Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,918.9582,205.82959)" d="M0 0-8.85 .414-9.022-17.967C3.014-18.876 4.639-18.53 11.294-9.659L10.092-20.231-19.279-20.255-15.156-16.821-15.249 18.817-19.534 21.336 8.533 21.751 8.399 11.584 3.768 18.673-9.012 19.066-8.948 2.488 1.161 2.898 4.859 8.226 4.544-5.801C3.024-3.75 1.474-.069 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,464.6539,205.89618)" d="M0 0C-2.156 .625-6.68 .452-9.535 .422L-9.681-17.376C-5.187-17.863 .023-18.897 4.231-16.835 6.493-15.726 8.009-11.813 10.444-9.711L9.123-20.207-20.038-20.122-16.013-17.391-16.066 18.201-20.378 21.519 7.336 21.808 6.991 12.172C5.312 14.492 3.779 18.119 2.152 18.535-.928 19.322-6.127 19.022-9.574 19.009L-9.678 2.719 .539 3.036 3.934 8.631 3.39-5.333C2.459-3.713 1.138-.33 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,240.8882,208.97992)" d="M0 0-6.458 17.217-13.208 .029ZM1.046-2.335-14.11-2.344-18.194-14.24-13.558-17.036-26.387-17.116-21.784-14.037-6.923 24.151-4.518 24.977C-3.97 25.166-2.858 23.685-2.554 22.911L10.861-11.298C11.987-14.169 13.523-15.257 16.506-17.065L1.244-17.25 5.41-14.449Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,283.187,217.35529)" d="M0 0C4.121-6.415 12.233-8.867 18.895-5.517 22.394-3.758 23.918 .155 26.736 3.658L26.31-7.011C17.265-9.617 8.158-11.069-.253-6.7-9.027-2.142-12.134 7.724-9.914 17.355-6.443 32.417 10.19 36.746 26.294 31.815L25.417 21.21C22.4 27.696 20.608 30.347 14.676 31.202 7.566 32.227 .882 29.038-1.869 21.923-4.503 15.109-4.314 6.715 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,352.7274,208.82569)" d="M0 0-6.642 17.063-13.064-.162ZM.863-2.568-14.087-2.508-18.19-14.128-14.186-17.24-26.046-17.234-21.36-13.698-6.491 24.667-3.158 24.485 10.82-11.615C11.819-14.194 13.918-15.512 16.547-17.277L.981-17.162 5.416-14.545Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,751.9912,208.91492)" d="M0 0-6.497 16.667-13.313-.129ZM1.215-2.569-13.934-2.264-17.722-12.34C-17.977-13.019-17.983-14.671-17.51-14.996L-14.482-17.076-26.21-17.16C-23.745-15.508-21.546-14.002-20.604-11.539L-7.557 22.585C-7.21 23.493-6.132 24.97-5.385 25.291-4.45 25.692-3.058 23.833-2.487 22.39L11.704-13.459C12.166-14.626 14.9-16.098 16.324-17.075L1.21-17.264 5.365-14.52Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,840.327,226.06513)" d="M0 0-15.787 .075-10.96 2.353-10.957 39.161-20.245 38.537-25.131 30.691-24.599 41.838 9.707 41.797 9.197 30.27 5.128 38.502-4.742 39.167-4.625 4.901C-4.623 4.241-4.292 2.487-3.756 2.177Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,575.1978,226.15222)" d="M0 0-14.843 .133-9.969 2.449-9.828 38.192-14.419 41.453 .568 41.759-3.549 38.874-3.568 3.256Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,798.1773,226.14478)" d="M0 0-14.492 .093-10.015 3.128-10.091 38.807-15.038 41.716 .734 41.843-3.904 38.693-3.966 3.037Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,881.1366,226.16687)" d="M0 0-14.826 .18-10.334 2.508-10.394 38.843-14.895 41.728 .561 41.842-4.142 38.804-4.211 3.064Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,469.4867,171.10578)" d="M0 0C-3.803-3.887-6.131-6.021-11.372-9.341L-6.919-.215Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,789.0314,176.57782)" d="M0 0C0-1.841-1.493-3.334-3.334-3.334-5.175-3.334-6.668-1.841-6.668 0-6.668 1.841-5.175 3.334-3.334 3.334-1.493 3.334 0 1.841 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,799.8571,176.44812)" d="M0 0C0-1.774-1.438-3.212-3.212-3.212-4.985-3.212-6.423-1.774-6.423 0-6.423 1.774-4.985 3.212-3.212 3.212-1.438 3.212 0 1.774 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,209.5402,769.8421)" d="M0 0C5.123 5.78 5.357 16.084 .468 21.78-2.999 25.82-9.246 25.926-13.721 25.372L-13.756-2.483C-9.377-3.539-3.744-4.225 0 0M-4.533-4.54-22.02-4.903-19.361-2.844C-18.892-2.481-18.407-.951-18.411-.316L-18.57 25.119-22.097 27.135-3.703 26.828C3.762 26.703 8.404 20.345 9.085 13.441 9.918 4.983 4.833-4.346-4.533-4.54" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,471.3834,770.0318)" d="M0 0C4.684 7.231 4.191 15.598-.245 22.254-2.198 25.185-6.271 26.467-9.573 25.895-18.071 24.421-20.366 11.405-15.545 1.762-14.273-.782-10.968-2.894-8.765-3.23-6.011-3.651-1.677-2.59 0 0M8.156 12.616C8.743 1.864 1.711-5.183-7.897-5.28-17.632-5.379-24.324 2.785-23.459 13.146-22.752 21.615-15.827 28.022-7.851 28.057 .957 28.095 7.636 22.147 8.156 12.616" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,422.2732,757.5619)" d="M0 0C2.071-1.535 7.719-.766 9.253 2.317 10.496 4.816 10.666 8.514 8.756 11.126 7.27 13.159 2.191 13.893 .038 12.643ZM4.612-4.08C4.146-3.31 1.697-2.66 .203-2.468L-.17-14.43 3.47-17.127-8.002-17.193-4.776-14.082-4.584 12.184-8.092 15.081 7.256 14.979C11.15 14.952 14.589 11.244 14.943 8.111 15.45 3.621 13.506-.121 8.185-1.807L16.473-14.563 20.562-17.112 12.363-16.884Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,526.4704,758.551)" d="M0 0C5.83-.022 8.231 1.127 9.454 4.248 10.401 6.664 9.928 11.143 7.611 12.964 5.976 14.249 2.082 14.351-.195 13.877ZM19.827-15.84C7.519-19.912 8.908-.859-.03-1.611L-.34-13.403 3.363-16.149-8.235-16.164-4.863-13.077-4.844 13.14-8.256 16.039 5.607 15.946C10.146 15.916 14.134 13.119 14.661 9.09 15.221 4.805 13.176 .965 8.052-.589L14.844-11.464C15.655-12.762 17.823-14.272 19.827-15.84" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,716.9724,772.6699)" d="M0 0 .032 27.269-3.463 29.69C-.499 30.419 3.754 30.495 4.932 28.979L22.262 6.679 22.355 27.515 18.112 29.901 28.668 30.027 24.653 27.528 24.116-3.267 2.333 24.704 2.101 .875 6.116-2.003-1.792-2.192C-2.197-2.202-3.52-1.041-3.132-.926Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,391.7996,759.6582)" d="M0 0C5.568-.268 8.236 1.043 9.502 4.006 10.784 7.008 10.542 11.168 8.357 13.325 6.38 15.276 2.793 15.582-.235 15.16ZM-.153-11.378C-.167-12.362 2.192-13.709 3.84-15.109L-8.135-15.099C-7.386-14.327-6.487-13.708-4.892-12.777L-4.7 13.75-8.102 16.784 9.2 16.523C12.728 16.47 15.16 11.079 15.234 8.162 15.322 4.685 12.92-.331 8.927-.836L-.022-1.967Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,582.8821,759.3251)" d="M0 0-.08-13.359 9.062-13.193C10.853-13.16 12.571-9.468 14.839-7.025L13.474-15.58-7.987-15.42C-5.66-13.568-4.541-11.984-4.711-9.889L-4.872 14.765-7.547 15.358C-8.04 15.468-6.899 16.771-6.26 16.775L12.491 16.891 12.652 8.445 9.263 14.323-.367 15.081-.11 2.576C4.485 1.441 7.445 1.934 9.983 5.53L9.925-3.95C7.486-.065 5.842 1.232 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,495.7781,759.61538)" d="M0 0C2.966-.266 7.15 .449 8.726 2.657 10.562 5.231 10.752 9.541 9.263 12.09 7.623 14.897 4.202 15.713 .01 15.181ZM-.076-12.041 3.938-15.15-8.156-15.187-4.64-12.269-4.723 14.37-8.279 16.916C-1.321 17.119 3.816 17.389 10.009 16.244 13.457 15.607 15.468 10.257 15.102 7.303 14.727 4.273 12.474-.558 8.999-.93L.133-1.878Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,991.0945,742.852)" d="M0 0C-1.567-1.911-2.648-3.785-2.635-5.798L-2.531-21.88C-2.488-28.519-7.957-32.43-14.011-32.444-21.051-32.461-26.159-28.294-26.14-21.134L-26.09-2.279-29.633-.023-18.635 .508C-18.514-.456-18.373-1.382-18.481-1.065-18.59-.747-21.249-1.772-21.252-2.114L-21.421-20.975C-21.469-26.359-18.847-29.204-14.391-30.008-10.871-30.643-5.265-28.849-5.156-23.963L-4.675-2.357-8.927 .137Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,1090.8629,758.95779)" d="M0 0-.139-13.798 10.695-13.105 14.388-7.328 13.291-15.907-8.074-15.818-4.758-13.017-4.813 13.805-8.412 16.24 12.464 16.535 12.179 8.099 9.48 13.775-.066 14.656-.094 2.241C4.425 1.06 6.691 1.443 9.595 5.658L9.68-3.712C6.371-.516 5.182 .234 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,645.041,759.8446)" d="M0 0-.12-13.034 8.9-12.621C10.709-12.539 12.468-9.081 14.636-6.477L13.652-14.902-8.237-14.96-4.953-12.057-4.947 14.633-8.327 17.268 12.395 17.298 11.937 9.142 9.497 15.062-.186 15.585-.16 3.039C4.138 1.936 6.688 2.222 9.631 6.513L9.505-3.338C7.954 1.053 2.46 2.082 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,876.1883,759.01296)" d="M0 0-.19-13.921 9.946-13.257 14.574-7.305 13.446-15.91-7.71-15.712C-6.506-14.315-4.742-12.638-4.739-11.464L-4.674 13.408-7.79 16.382 12.59 16.474 12.555 8.587 9.24 14.205-.197 14.757-.064 1.974C5.168 1.31 7.157 1.847 9.839 5.272L9.642-4.276C6.875-.412 6.565 .68 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,337.9108,761.36917)" d="M0 0-5.514 13.011-10.286-.236ZM.518-2.143-11.063-1.897-14.182-9.868-11.384-13.436-20.109-13.348-17.467-10.524-3.965 20.48 8.244-10.366 12.309-13.337 .567-13.446 3.041-10.327Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,791.4739,759.82986)" d="M0 0-.031-12.839 9.111-12.441C10.88-12.364 12.793-8.551 14.485-6.905L13.638-14.95-8.118-14.88-4.822-11.295-4.886 14.448-8.084 17.315 12.32 17.204 12.298 9.314 8.899 14.981-.091 15.46V2.764C4.652 2.143 6.959 2.696 9.693 6.13L9.426-3.509C7.788 .672 3.772 1.932 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,1005.9538,759.3334)" d="M0 0 .031-13.511 10.237-13.18 15.039-7.054 13.917-15.622-7.457-15.439-4.321-11.77-4.435 14.022-7.624 16.662 12.715 16.88 12.722 9.008 9.334 14.428 .011 15.056 .019 2.559C4.352 1.567 7.529 1.991 9.865 5.508L9.772-3.94C7.541-.096 5.716 1.351 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,245.2108,763.45)" d="M0 0C-2.618 4.577-4.431 5.087-10.02 4.205L-9.938-9.089 .679-9.122 4.756-2.846 4.15-11.32-18.426-11.318-14.637-8.713-14.584 18.059-17.952 20.796 3.218 20.938 2.768 13.174C1.812 14.548 .527 18.478-.929 18.578L-9.872 19.187-9.899 6.58C-4.797 5.843-2.861 5.844 .496 10.147Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,904.1163,750.76309)" d="M0 0C-3.645-9.709 .242-21.92 9.341-22.421 14.099-22.683 16.392-20.661 19.63-15.91 19.699-17.332 19.581-20.262 19.256-22.001 18.821-24.337 1.464-28.427-4.646-16.659-7.733-10.715-7.321-1.818-2.802 3.183 3.094 9.708 11.475 9.962 19.469 6.978L19.185-1.03C17.029 3.76 16.285 6.182 11.846 6.798 6.799 7.498 2.046 5.449 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,949.2838,774.8441)" d="M0 0-11.964 .125-8.303 2.901-8.367 29.974C-9.742 30.523-13.737 30.873-14.587 29.668L-18.347 24.333-18.301 32.127 6.468 32.31 6.511 24.483 3.295 29.287C2.519 30.446-.791 30.379-3.428 30.496L-3.753 3.598Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,622.2416,774.6891)" d="M0 0-11.127-.217C-11.057 .572-11.01 1.346-10.646 1.45L-7.977 2.216-7.919 29.776C-12.156 31.605-15.438 29.218-17.886 24.227-18.159 26.766-18.061 30.36-17.669 32.203L7.184 31.971 6.768 24.193 3.21 29.657C2.37 30.947-1.945 30.26-3.249 30.042L-3.219 2.749Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,834.6194,766.6459)" d="M0 0-.768-8.257-21.72-8.099-18.511-5.288-18.547 21.513-22.12 23.884-11.125 24.342C-10.953 23.301-10.799 22.762-11.102 22.666L-13.607 21.873-13.707-5.894-5.169-5.686C-3.667-5.649-2.123-2.424 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,766.3782,771.0884)" d="M0 0 3.185-3.728-8.135-3.6-4.781-.623-4.861 26.622C-7.319 26.699-10.564 26.792-11.294 25.711L-14.948 20.304-14.945 28.47 10.326 28.545 9.937 20.047 6.975 26.317 .027 26.52Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,1048.6196,774.80679)" d="M0 0-21.098 .115-17.623 2.902-17.588 29.648-21.36 32.128-9.192 32.263-13.185 29.932-13.211 2.079-3.71 2.257 .914 8.916Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,309.8164,774.84756)" d="M0 0-21.196 .084-18.256 2.751-18.212 29.886-21.684 32.166-10.038 32.387-13.815 29.449-13.711 2.137-4.098 2.53C-2.128 2.61-.227 7.21 1.226 9.043Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,862.3843,766.29849)" d="M0 0-1.235-8.632-21.861-8.366-18.659-6.075-18.572 21.075-22.271 23.739-10.422 23.529-13.982 21.302-13.994-5.855C-8.326-7.865-4.043-6.437 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,1076.7153,766.72317)" d="M0 0-.825-8.163-21.214-7.997-18.204-4.955-18.121 21.5-21.519 23.986-9.888 23.991-13.702 21.439-13.563-6.015-5.02-5.632C-3.581-5.567-2.015-2.33 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,705.1497,774.86099)" d="M0 0-11.471 .064-8.151 2.454-8.07 29.722-11.745 32.287 .582 32.17-3.519 29.634-3.516 2.937Z" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,565.155,774.8091)" d="M0 0-11.469 .017-7.566 2.657-7.628 29.67-11.631 32.211 .481 32.283-3.06 29.377-3.144 4.574C-3.148 3.494-1.867 2.061 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,655.779,733.6549)" d="M0 0-8.311-6.772C-8.183-2.737-5.518 2.353 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,593.779,733.6549)" d="M0 0-8.311-6.772C-8.183-2.737-5.518 2.353 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,923.7361,472.85798)" d="M0 0C1.025-71.326-25.171-144.476-72.923-197.063-56.342-170.1-41.97-142.888-31.021-113.18-8.727-52.686-5.201 12.131-21.483 74.676-32.205 115.867-50.519 153.666-73.091 189.902-25.738 138.831-.994 69.143 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,418.4905,670.04397)" d="M0 0C-44.786 47.305-69.474 114.083-72.44 178.968-74.939 233.628-63.082 286.857-37.535 334.637-26.199 353.32-15.796 371.948 .355 387.168-22.025 352.104-39.584 315.751-50.346 275.827-66.612 215.49-64.691 152.658-45.525 93.203-34.77 59.839-18.998 29.339 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,479.0682,501.29029)" d="M0 0C0 18.145-14.593 32.854-32.594 32.854-50.596 32.854-65.189 18.145-65.189 0-65.189-18.145-50.596-32.854-32.594-32.854-14.593-32.854 0-18.145 0 0M3.514-.023C3.514-20.12-12.649-36.412-32.587-36.412-52.526-36.412-68.689-20.12-68.689-.023-68.689 20.073-52.526 36.365-32.587 36.365-12.649 36.365 3.514 20.073 3.514-.023" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,463.1158,513.18618)" d="M0 0-.324 16.532-5.577 1.135C-5.769 .575-8.171-.584-8.508-.078-8.963 .605-9.828 2.071-10.103 2.89L-14.761 16.751-14.972 .1-19.292-.105-19.407 22.9-12.656 22.854-7.344 8.444-2.365 22.809 4.332 23.07 4.376 .049Z" fill="var(--logo-accent)"/><path transform="matrix(1,0,0,-1,434.0875,513.06069)" d="M0 0-4.837-.076-4.838 18.993-8.931 19.045C-9.668 19.054-11.29 20.047-11.535 20.751-11.84 21.632-9.921 23.083-8.988 23.068L6.653 22.815C6.464 20.769 6.287 19.202 5.631 19.21L.188 19.273Z" fill="var(--logo-accent)"/><path transform="matrix(1,0,0,-1,855.9799,501.2793)" d="M0 0C0 18.194-14.632 32.942-32.682 32.942-50.732 32.942-65.365 18.194-65.365 0-65.365-18.194-50.732-32.942-32.682-32.942-14.632-32.942 0-18.194 0 0M3.456-.019C3.456-20.154-12.738-36.476-32.714-36.476-52.69-36.476-68.883-20.154-68.883-.019-68.883 20.116-52.69 36.438-32.714 36.438-12.738 36.438 3.456 20.116 3.456-.019" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,816.228,511.34663)" d="M0 0C2.675-4.123 6.892-6.431 11.096-5.482 15.311-4.53 17.221-1.546 21.537 3.213L20.321-5.284C12.906-8.651 3.772-10.144-3.105-4.709-12.318 2.573-11.637 17.776-2.503 24.791 4.318 30.03 12.703 28.835 20.477 25.624 21.276 22.817 21.19 18.818 19.991 15.627 17.204 20.591 15.639 24.595 12.308 25.393 6.828 26.706 2.313 25.118-.2 20.501-3.487 14.465-3.971 6.122 0 0" fill="var(--logo-accent)"/><path transform="matrix(1,0,0,-1,667.6491,309.29463)" d="M0 0C0 18.584-14.946 33.649-33.383 33.649-51.821 33.649-66.767 18.584-66.767 0-66.767-18.584-51.821-33.649-33.383-33.649-14.946-33.649 0-18.584 0 0M3.527-.014C3.527-20.568-13.003-37.229-33.394-37.229-53.785-37.229-70.315-20.568-70.315-.014-70.315 20.539-53.785 37.201-33.394 37.201-13.003 37.201 3.527 20.539 3.527-.014" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,629.0521,308.0957)" d="M0 0C6.302-.276 8.783 .483 10.507 3.76 11.818 6.25 11.428 10.728 9.732 12.763 7.588 15.336 3.374 15.808 .065 14.665ZM5.493-3.695C4.803-2.381 1.031-1.79-.011-3.033L-.194-15.507 4.468-18.788-10.985-18.842-6.393-15.514-6.325 14.748C-8.224 15.629-9.087 16.061-10.627 17.287L7.672 17.568C13.116 17.651 17.138 14.501 17.925 9.64 18.784 4.331 15.54-.025 10.553-.967L15.684-9.848C17.841-13.581 19.978-15.861 23.644-18.859L13.509-18.962Z" fill="var(--logo-accent)"/><path transform="matrix(1,0,0,-1,573.6074,508.06983)" d="M0 0-21.919 64.672-22.212-.25ZM-24.716-.025-25.064 64.697-47.143-.203ZM167.086-.035 144.966 65.547 144.65-.339ZM142.266 .052 141.827 65.494 119.704-.305ZM62.817 68.905 61.889 65.615C61.664 64.817 59.098 63.906 58.721 64.643L57.017 67.975C53.311 69.453 50.518 72.71 49.299 76.469 37.349 81.925 23.462 79.595 11.374 74.085 3.239 70.377-5.932 67.79-14.446 71.032-16.117 71.668-20.729 69.971-20.101 68.149L3.221 .512 10.202-.441C3.533-13.105-8.708-21.368-22.78-21.461-37.089-21.556-49.864-14.694-56.711-.602L-50.454-.224-26.991 68.695C-30.966 71.242-32.614 75.117-31.53 78.909-30.423 82.787-26.873 85.183-22.884 84.951-18.666 84.706-16.057 80.516-15.079 76.623-5.512 75.671 3.396 80.401 11.537 84.803 23.514 91.278 35.982 94.371 49.405 89.899 49.772 99.339 60.658 100.23 58.599 102.68 55.671 106.164 51.382 107.414 50.743 112.582 49.653 121.405 58.874 122.39 59.742 132.318 61.842 127.448 63.976 123.629 67.213 120.292 71.897 115.463 68.853 107.058 63.601 104.911 62.702 104.544 61.308 102.269 61.72 101.546 63.568 98.304 70.343 99.141 69.317 89.678 82.792 94.114 96.273 91.823 108.742 84.902 117.1 80.263 126.178 75.811 135.768 76.6 136.327 80.825 138.739 84.631 143.045 84.957 146.846 85.245 150.531 82.945 151.785 78.964 153.065 74.901 150.64 71.104 146.985 68.265L169.937 .675 176.817-.625C169.879-16.549 151.657-24.673 134.157-20.285 123.4-17.588 114.786-9.914 109.294-.231L116.676 .016 121.814 15.927 139.639 68.123C139.323 69.033 138.889 70.235 138.47 70.685 136.845 72.43 127.646 65.736 109.543 73.991 96.786 79.809 82.856 81.768 69.577 76.368 69.411 72.7 66.955 69.41 62.817 68.905" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,646.5033,563.61587)" d="M0 0-25.859-.276C-27.463 5.003-25.972 11.097-19.868 13.485L-19.893 112.213-24.786 117.514-1.119 117.54-6.223 111.449-6.351 13.708C-1.201 10.877 1.141 7.752 0 0" fill="var(--logo-ink)"/><path transform="matrix(1,0,0,-1,668.8632,584.7574)" d="M0 0-70.545-.015C-71.144 3.151-70.763 8.012-67.549 9.609-65.341 10.706-60.011 10.314-57.899 10.226L-56.006 17.967-14.401 17.897-12.028 10.547C-9.75 10.416-5.067 10.518-2.759 9.464 .163 8.13 .44 3.31 0 0" fill="var(--logo-ink)"/></svg>
+        <p class="motto">L’intelligence crée. <em>Le droit protège.</em></p>
+      </div>
+      <div class="cols">
+        <div class="col"><h4>Écrire</h4><a id="mail" href="mailto:contact@acahpi.com">contact@acahpi.com</a></div>
+        <div class="col"><h4>Téléphone</h4><p>+509 4292 3132</p></div>
+        <div class="col"><h4>Siège</h4><p>Port-au-Prince, Haïti</p></div>
+        <div class="col"><h4>Partenariats</h4><a href="#candidature">Concevoir une formation</a><a href="#candidature">Partager une expertise</a><a href="#candidature">Soutenir l’accès au cycle</a></div>
+      </div>
+    </div>
+    <div class="base">
+      <span>© 2026 Académie haïtienne de la propriété intellectuelle</span>
+      <span>Transmettre le savoir · Former les compétences · Éclairer la décision publique</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var f=document.getElementById('cand'); if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var need=['prenom','nom','email'];
+    var miss=need.filter(function(id){return !document.getElementById(id).value.trim()});
+    var n=document.getElementById('note');
+    if(miss.length){
+      n.textContent='Renseignez au moins le prénom, le nom et l’adresse électronique.';
+      n.style.color='var(--red)';
+      document.getElementById(miss[0]).focus();
+      return;
+    }
+    var box=document.createElement('div');
+    box.className='done'; box.setAttribute('role','status');
+    var h=document.createElement('h3');
+    h.textContent='Candidature reçue, '+document.getElementById('prenom').value.trim()+'.';
+    var p=document.createElement('p');
+    p.textContent='L’Académie écrira à l’adresse indiquée avec le calendrier des sessions et les conditions de participation.';
+    box.appendChild(h); box.appendChild(p);
+    f.replaceWith(box);
+  });
+})();
+</script>
+
+</body>
+</html>

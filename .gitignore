@@ -1,0 +1,8 @@
+# Brief de reprise : contexte commercial, reste local
+CLAUDE.md
+
+# Sources photo plein format ; la page utilise les JPEG recadrés
+assets/team/*.png
+
+.DS_Store
+.claude/
